@@ -1,7 +1,3 @@
-def calculaMediaIdade(idadeTotal:int ,numeroEntrevistados: int):
-    return idadeTotal/numeroEntrevistados
-    
-
 def entrevista():
     contadorIOS = 0
     contadorAndroid = 0
@@ -11,23 +7,35 @@ def entrevista():
     numeroEntrevistados = int(input("Quantas pessoas vamos entrevistar? "))
 
     for i in range (numeroEntrevistados):
-        idade = int(input("Qual a sua idade? "))
-        os = input("Qual seu sistema operacional mobile? (Android|IOS) ")
-
+        idade = validaIdade();
+        os = verificaOS();
         acumuladorIdade+=idade
 
-        if os == "Android":
-            contadorAndroid+=1
-        elif os == "IOS":
-            contadorIOS+=1
+        if os == "IOS":
+            contadorIOS += 1
         else:
-            print("Sistema não reconhecido");
-        print("\n")
+            contadorAndroid += 1  
+        print("")
 
     
     print("\nNúmero de sistemas IOS: ",contadorIOS)
     print("\nNúmero de sistemas androids: ", (contadorAndroid))
     print(f'\nMédia da idade da turma: {calculaMediaIdade(acumuladorIdade, numeroEntrevistados):,.2f}')
 
+def calculaMediaIdade(idadeTotal:int ,numeroEntrevistados: int):
+    return idadeTotal/numeroEntrevistados
+    
+def verificaOS():
+    os = input("Qual seu sistema operacional mobile? (Android | IOS) ")
+    while os not in ["Android", "IOS"]:
+        os = input("SO inválido! Digite SO [IOS | Android]: ")     
+    return os;
+
+def validaIdade():
+    idade = int(input("Qual a sua idade? "))
+    while idade < 0 or idade > 130:
+        idade = int(input("Idade inválida!! Qual a sua idade? "))
+
+    return idade
 
 entrevista()
