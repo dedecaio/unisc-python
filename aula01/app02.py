@@ -40,13 +40,3 @@ def planoDiretor():
         print("Revisar medidas, projeto não atende norma de zoneamento do plano diretor")
 
 planoDiretor()                                                                  # Chamada à função principal.
-
-#Entre com a largura da garagem em metros: 20
-#Entre com a profundidade da garagem em metros: 20
-#Entre com a largura do terreno em metros: 30
-#Entre com a profundidade do terreno em metros: 30
-#Percentual de ocupação: 44.44444444444444
-#Entre com a zona de localização [Sul=S, Norte=N, Leste=L, Oeste=O]: s
-#Entre com a zona de localização [Sul=S, Norte=N, Leste=L, Oeste=O]: a
-#Entre com a zona de localização [Sul=S, Norte=N, Leste=L, Oeste=O]: S
-#Revisar medidas, projeto não atende norma de zoneamento do plano diretor
