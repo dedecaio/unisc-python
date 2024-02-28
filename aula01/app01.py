@@ -15,7 +15,7 @@ def entrevista():
             contadorIOS += 1
         else:
             contadorAndroid += 1  
-        print("")
+        print("dd")
 
     
     print("\nNúmero de sistemas IOS: ",contadorIOS)
