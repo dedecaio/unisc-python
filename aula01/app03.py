@@ -1,3 +1,4 @@
+# MEDIA PONDERADA
 def main():
     total = 0
     pA,pB,pC = 2,3,5
@@ -20,6 +21,7 @@ def entrada():
 
 def calculaMedia(total, pesoTotal):
     return total/pesoTotal
+
 def imprimeMedia(media):
     print(f'MEDIA = {media:.1f}')
 
