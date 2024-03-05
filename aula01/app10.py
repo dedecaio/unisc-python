@@ -25,9 +25,9 @@ def calcula(x,y):
     funcC = -100*x + pow(y,3)
     if funcR > funcC and funcR > funcB:
         return "Rafael"
-    elif funcB > funcR and funcB > funcC:
+    elif funcB > funcC:
         return "Beto"
-    elif funcC > funcR and funcC > funcB:
+    else:
         return "Carlos"
 
 main()

@@ -9,7 +9,7 @@ def entrada():
     return int(v1), int(v2)
 
 def multiplo(v1,v2):
-    if v2 % v1 == 0 or v2 % v1: 
+    if v2 % v1 == 0 or v2 % v1 == 0: 
         print("Sao Multiplos")
     else: 
         print("Nao sao Multiplos")
